@@ -12,7 +12,7 @@ my email is coding495@163.com.
 
 'Demo.m' gives a simple examples. 
 
-To run the codes, the size of the inputs are: $X_s\in \mathbb{R}^{m\times n_s},X_t\in \mathbb{R}^{m\times n_t},Y_s\in \mathbb{R}^{ n_s},Y_t\in \mathbb{R}^{m\times n_t}$, where $m$ is the dimension, and $n_s$ and $n_t$ present the number of the source and target samples, respectively ($Y_t$ is used to calculate the accuracy only, and is not involved in training).
+To run the codes, the size of the inputs are: <img src="http://latex.codecogs.com/svg.latex?X_s\in&space;\mathbb{R}^{m\times&space;n_s},X_t\in&space;\mathbb{R}^{m\times&space;n_t},Y_s\in&space;\mathbb{R}^{&space;n_s},Y_t\in&space;\mathbb{R}^{m\times&space;n_t}" title="http://latex.codecogs.com/svg.latex?X_s\in \mathbb{R}^{m\times n_s},X_t\in \mathbb{R}^{m\times n_t},Y_s\in \mathbb{R}^{ n_s},Y_t\in \mathbb{R}^{m\times n_t}" />, where *m* is the dimension, and <img src="http://latex.codecogs.com/svg.latex?n_s" title="http://latex.codecogs.com/svg.latex?n_s" /> and <img src="http://latex.codecogs.com/svg.latex?n_t" title="http://latex.codecogs.com/svg.latex?n_t" /> present the number of the source and target samples, respectively (<img src="http://latex.codecogs.com/svg.latex?Y_t" title="http://latex.codecogs.com/svg.latex?Y_t" /> is used to calculate the accuracy only, and is not involved in training).
 
 
 
