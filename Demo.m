@@ -43,6 +43,9 @@ clear opt;opt.display=1;
 % addpath(genpath('./2020-DSL-DGDA/'));
 % DSL_DGDA(Xs,Ys,Xt,Yt,opt);
 
+% addpath(genpath('./2020-McDA/'));
+% McDA(Xs,Ys,Xt,Yt,opt);
+
 % addpath(genpath('./2020-WCS-RAR/'));
 % WCS_RAR(Xs,Ys,Xt,Yt,opt);
 

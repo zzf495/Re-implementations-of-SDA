@@ -14,8 +14,6 @@ my email is coding495@163.com.
 
 To run the codes, the size of the inputs are: <img src="http://latex.codecogs.com/svg.latex?X_s\in&space;\mathbb{R}^{m\times&space;n_s},X_t\in&space;\mathbb{R}^{m\times&space;n_t},Y_s\in&space;\mathbb{R}^{&space;n_s},Y_t\in&space;\mathbb{R}^{m\times&space;n_t}" title="http://latex.codecogs.com/svg.latex?X_s\in \mathbb{R}^{m\times n_s},X_t\in \mathbb{R}^{m\times n_t},Y_s\in \mathbb{R}^{ n_s},Y_t\in \mathbb{R}^{m\times n_t}" />, where *m* is the dimension, and <img src="http://latex.codecogs.com/svg.latex?n_s" title="http://latex.codecogs.com/svg.latex?n_s" /> and <img src="http://latex.codecogs.com/svg.latex?n_t" title="http://latex.codecogs.com/svg.latex?n_t" /> present the number of the source and target samples, respectively (<img src="http://latex.codecogs.com/svg.latex?Y_t" title="http://latex.codecogs.com/svg.latex?Y_t" /> is used to calculate the accuracy only, and is not involved in training).
 
-
-
 ---
 
 - 2015-LRSR [[1]](https://ieeexplore.ieee.org/abstract/document/7360924)
@@ -32,6 +30,7 @@ To run the codes, the size of the inputs are: <img src="http://latex.codecogs.co
 - 2020-SPL [[16](https://ojs.aaai.org/index.php/AAAI/article/view/6091)]: [provided by authors](https://github.com/hellowangqian/domain-adaptation-capls)
 - 2020-DGSA [[12]](https://ieeexplore.ieee.org/abstract/document/9115265)
 - 2020-DSL-DGDA [[13]](https://link.springer.com/article/10.1007/s10489-019-01610-5) 
+- 2020-McDA [[18]](https://link.springer.com/article/10.1007/s11063-019-10090-0)
 - 2020-WCS-RAR [[17]](https://www.sciencedirect.com/science/article/pii/S0893608020300113)
 - 2021-JDSC [[14]](https://link.springer.com/article/10.1007/s11760-020-01745-w):  [provided by authors](https://github.com/jtahmores/JDSC)
 - 2021-PDALC [[15]](https://ieeexplore.ieee.org/abstract/document/9428235)
@@ -40,7 +39,7 @@ To run the codes, the size of the inputs are: <img src="http://latex.codecogs.co
 
 [1] Y. Xu, X. Fang, J. Wu, X. Li and D. Zhang, "Discriminative Transfer Subspace Learning via Low-Rank and Sparse Representation," in IEEE Transactions on Image Processing, vol. 25, no. 2, pp. 850-863, Feb. 2016, doi: 10.1109/TIP.2015.2510498.
 
-[2] Tahmoresnezhad, J., Hashemi, S. Visual domain adaptation via transfer feature learning. *Knowl Inf Syst* **50,** 585–605 (2017). https://doi.org/10.1007/s10115-016-0944-x
+[2] Tahmoresnezhad, J., Hashemi, S. Visual domain adaptation via transfer feature learning. *Knowl Inf Syst* 50, 585–605 (2017). https://doi.org/10.1007/s10115-016-0944-x
 
 [3] J. Zhang, W. Li and P. Ogunbona, "Joint Geometrical and Statistical Alignment for Visual Domain Adaptation," 2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2017, pp. 5150-5158, doi: 10.1109/CVPR.2017.547.
 
@@ -50,7 +49,7 @@ To run the codes, the size of the inputs are: <img src="http://latex.codecogs.co
 
 [6] J. Liang, R. He, Z. Sun and T. Tan, "Aggregating Randomized Clustering-Promoting Invariant Projections for Domain Adaptation," in IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 41, no. 5, pp. 1027-1042, 1 May 2019, doi: 10.1109/TPAMI.2018.2832198.
 
-[7] Rezaei, S., Tahmoresnezhad, J. Discriminative and domain invariant subspace alignment for visual tasks. *Iran J Comput Sci* **2,** 219–230 (2019). https://doi.org/10.1007/s42044-019-00037-y.
+[7] Rezaei, S., Tahmoresnezhad, J. Discriminative and domain invariant subspace alignment for visual tasks. *Iran J Comput Sci* 2, 219–230 (2019). https://doi.org/10.1007/s42044-019-00037-y.
 
 [8] Xiao, Ting, et al. "Structure preservation and distribution alignment in discriminative transfer subspace learning." *Neurocomputing* 337 (2019): 218-234.
 
@@ -71,3 +70,5 @@ To run the codes, the size of the inputs are: <img src="http://latex.codecogs.co
 [16] Wang, Q., & Breckon, T. (2020). Unsupervised Domain Adaptation via Structured Prediction Based Selective Pseudo-Labeling. *Proceedings of the AAAI Conference on Artificial Intelligence*, *34*(04), 6243-6250. https://doi.org/10.1609/aaai.v34i04.6091
 
 [17] Yang, Liran, and Ping Zhong. "Robust adaptation regularization based on within-class scatter for domain adaptation." *Neural Networks* 124 (2020): 60-74.
+
+[18] Zhang, W., Zhang, X., Lan, L. *et al.* Maximum Mean and Covariance Discrepancy for Unsupervised Domain Adaptation. *Neural Process Lett* 51, 347–366 (2020). https://doi.org/10.1007/s11063-019-10090-0
