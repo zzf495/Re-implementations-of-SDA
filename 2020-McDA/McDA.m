@@ -1,5 +1,5 @@
 function [acc,acc_ite] = McDA(Xs,Ys,Xt,Yt,options)
-%% Implementation of PDR
+%% Implementation of McDA
 %%% Authors:    Zhang et al.
 %%% Paper:      2020-Maximum Mean and Covariance Discrepancy for Unsupervised Domain Adaptation
 %% input

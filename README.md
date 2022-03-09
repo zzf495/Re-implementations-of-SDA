@@ -34,6 +34,8 @@ To run the codes, the size of the inputs are: <img src="http://latex.codecogs.co
 - 2020-WCS-RAR [[17]](https://www.sciencedirect.com/science/article/pii/S0893608020300113)
 - 2021-JDSC [[14]](https://link.springer.com/article/10.1007/s11760-020-01745-w):  [provided by authors](https://github.com/jtahmores/JDSC)
 - 2021-PDALC [[15]](https://ieeexplore.ieee.org/abstract/document/9428235)
+- 2021-CMFC [[20]](https://www.sciencedirect.com/science/article/pii/S0045790621000604)
+- 2021-CDEM [[19]](https://link.springer.com/chapter/10.1007/978-3-030-73197-7_29) :  [provided by authors](https://github.com/yuntaodu/CDEM)
 
 # Reference
 
@@ -72,3 +74,7 @@ To run the codes, the size of the inputs are: <img src="http://latex.codecogs.co
 [17] Yang, Liran, and Ping Zhong. "Robust adaptation regularization based on within-class scatter for domain adaptation." *Neural Networks* 124 (2020): 60-74.
 
 [18] Zhang, W., Zhang, X., Lan, L. *et al.* Maximum Mean and Covariance Discrepancy for Unsupervised Domain Adaptation. *Neural Process Lett* 51, 347–366 (2020). https://doi.org/10.1007/s11063-019-10090-0
+
+[19] Du, Yuntao, et al. "Cross-domain error minimization for unsupervised domain adaptation." *International Conference on Database Systems for Advanced Applications*. Springer, Cham, 2021.
+
+[20] Chang H, Zhang F, Ma S, et al. Unsupervised domain adaptation based on cluster matching and Fisher criterion for image classification[J]. Computers & Electrical Engineering, 2021, 91: 107041.

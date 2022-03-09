@@ -49,5 +49,9 @@ clear opt;opt.display=1;
 % addpath(genpath('./2020-WCS-RAR/'));
 % WCS_RAR(Xs,Ys,Xt,Yt,opt);
 
+% addpath(genpath('./2021-CMFC/'));
+% CMFC(Xs,Ys,Xt,Yt,opt);
+
 % addpath(genpath('./2021-PDALC/'));
 % PDALC(Xs,Ys,Xt,Yt,opt);
+
