@@ -27,7 +27,6 @@ To run the codes, the size of the inputs are: <img src="http://latex.codecogs.co
 - 2020-ATL [[9]](https://ieeexplore.ieee.org/abstract/document/8649674)
 - 2020-DAC [[10]](https://www.sciencedirect.com/science/article/pii/S0950705119306082)
 - 2020-DGA [[11]](https://ieeexplore.ieee.org/abstract/document/8961922/)
-- 2020-DGB-DA [[21]](https://ieeexplore.ieee.org/abstract/document/9534057/)
 - 2020-SPL [[16](https://ojs.aaai.org/index.php/AAAI/article/view/6091)]: [provided by authors](https://github.com/hellowangqian/domain-adaptation-capls)
 - 2020-DGSA [[12]](https://ieeexplore.ieee.org/abstract/document/9115265)
 - 2020-DSL-DGDA [[13]](https://link.springer.com/article/10.1007/s10489-019-01610-5) 
@@ -36,6 +35,7 @@ To run the codes, the size of the inputs are: <img src="http://latex.codecogs.co
 - 2021-JDSC [[14]](https://link.springer.com/article/10.1007/s11760-020-01745-w):  [provided by authors](https://github.com/jtahmores/JDSC)
 - 2021-PDALC [[15]](https://ieeexplore.ieee.org/abstract/document/9428235)
 - 2021-CMFC [[20]](https://www.sciencedirect.com/science/article/pii/S0045790621000604)
+- 2021-DGB-DA [[21]](https://ieeexplore.ieee.org/abstract/document/9534057/)
 - 2021-CDEM [[19]](https://link.springer.com/chapter/10.1007/978-3-030-73197-7_29) :  [provided by authors](https://github.com/yuntaodu/CDEM)
 
 # Reference
