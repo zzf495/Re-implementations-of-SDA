@@ -37,8 +37,7 @@ clear opt;opt.display=1;
 % addpath(genpath('./2020-DGA/'));
 % DGA(Xs,Ys,Xt,Yt,opt);
 
-% addpath(genpath('./2020-DGB-DA/'));
-% DGB_DA(Xs,Ys,Xt,Yt,opt);
+
 
 % addpath(genpath('./2020-DGSA/'));
 % DGSA(Xs,Ys,Xt,Yt,opt);
@@ -54,6 +53,9 @@ clear opt;opt.display=1;
 
 % addpath(genpath('./2021-CMFC/'));
 % CMFC(Xs,Ys,Xt,Yt,opt);
+
+% addpath(genpath('./2021-DGB-DA/'));
+% DGB_DA(Xs,Ys,Xt,Yt,opt);
 
 % addpath(genpath('./2021-PDALC/'));
 % PDALC(Xs,Ys,Xt,Yt,opt);
