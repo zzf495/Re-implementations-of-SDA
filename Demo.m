@@ -37,6 +37,9 @@ clear opt;opt.display=1;
 % addpath(genpath('./2020-DGA/'));
 % DGA(Xs,Ys,Xt,Yt,opt);
 
+% addpath(genpath('./2020-DGB-DA/'));
+% DGB_DA(Xs,Ys,Xt,Yt,opt);
+
 % addpath(genpath('./2020-DGSA/'));
 % DGSA(Xs,Ys,Xt,Yt,opt);
 

@@ -27,6 +27,7 @@ To run the codes, the size of the inputs are: <img src="http://latex.codecogs.co
 - 2020-ATL [[9]](https://ieeexplore.ieee.org/abstract/document/8649674)
 - 2020-DAC [[10]](https://www.sciencedirect.com/science/article/pii/S0950705119306082)
 - 2020-DGA [[11]](https://ieeexplore.ieee.org/abstract/document/8961922/)
+- 2020-DGB-DA [[21]](https://ieeexplore.ieee.org/abstract/document/9534057/)
 - 2020-SPL [[16](https://ojs.aaai.org/index.php/AAAI/article/view/6091)]: [provided by authors](https://github.com/hellowangqian/domain-adaptation-capls)
 - 2020-DGSA [[12]](https://ieeexplore.ieee.org/abstract/document/9115265)
 - 2020-DSL-DGDA [[13]](https://link.springer.com/article/10.1007/s10489-019-01610-5) 
@@ -78,3 +79,5 @@ To run the codes, the size of the inputs are: <img src="http://latex.codecogs.co
 [19] Du, Yuntao, et al. "Cross-domain error minimization for unsupervised domain adaptation." *International Conference on Database Systems for Advanced Applications*. Springer, Cham, 2021.
 
 [20] Chang H, Zhang F, Ma S, et al. Unsupervised domain adaptation based on cluster matching and Fisher criterion for image classification[J]. Computers & Electrical Engineering, 2021, 91: 107041.
+
+[21] Y. Du, D. Zhou, J. Shi, Y. Lei and M. Gong, "Dynamic-graph-based Unsupervised Domain Adaptation," 2021 International Joint Conference on Neural Networks (IJCNN), 2021, pp. 1-7, doi: 10.1109/IJCNN52387.2021.9534057.
