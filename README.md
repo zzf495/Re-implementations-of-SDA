@@ -26,7 +26,7 @@ To run the codes, the size of the inputs are: <img src="http://latex.codecogs.co
 - 2019-SPDA [[8]](https://www.sciencedirect.com/science/article/pii/S0925231219300979)
 - 2020-ATL [[9]](https://ieeexplore.ieee.org/abstract/document/8649674)
 - 2020-DAC [[10]](https://www.sciencedirect.com/science/article/pii/S0950705119306082)
-- 2020-DGA [[11]](https://ieeexplore.ieee.org/abstract/document/8961922/)
+- 2020-DGA [[11]](https://ieeexplore.ieee.org/abstract/document/8961922/): To reproduce the results, please normalize the data by normr(X')' only, do not use 'zscore';
 - 2020-SPL [[16](https://ojs.aaai.org/index.php/AAAI/article/view/6091)]: [provided by authors](https://github.com/hellowangqian/domain-adaptation-capls)
 - 2020-DGSA [[12]](https://ieeexplore.ieee.org/abstract/document/9115265)
 - 2020-DSL-DGDA [[13]](https://link.springer.com/article/10.1007/s10489-019-01610-5) 

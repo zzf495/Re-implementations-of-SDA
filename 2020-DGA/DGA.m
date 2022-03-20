@@ -10,8 +10,8 @@ function [acc,acc_ite] = DGA(Xs,Ys,Xt,Yt,options)
 %% output
 %%% acc:        the classification accuracy (number,0~1)
 %%% acc_ite:    the classification accuracy in each iteration (list)
-% Xs = normr(Xs')';
-% Xt = normr(Xt')';
+Xs = normr(Xs')';
+Xt = normr(Xt')';
 acc_ite=[];
 options=defaultOptions(options,...
                             'T',10,...
@@ -32,9 +32,11 @@ H=centeringMatrix(n);
 M0=marginalDistribution(Xs,Xt,C);
 [A,~]=eigs(X*M0*X'+lambda*eye(m),X*H*X',dim,'sm');
 Z=A'*X;
+Z=L2Norm(Z')';
 Zs=Z(:,1:ns);
 Zt=Z(:,ns+1:end);
 Ytpesudo=classifyKNN(Zs,Ys,Zt,1);
+Y0=Ytpesudo;
 acc=getAcc(Ytpesudo,Yt);
 if isfield(options,'display')
    fprintf('[%2d] (init) acc:%.4f\n',0,acc);
@@ -55,18 +57,18 @@ for i=1:T
     Z=L2Norm(Z')';
     Zs=Z(:,1:ns);
     Zt=Z(:,ns+1:end);
-    Ytpesudo=classifyKNN(Zs,Ys,Zt,1);
+%     Ytpesudo=classifyKNN(Zs,Ys,Zt,1);
     manifold.Metric = 'Euclidean';
-    manifold.NeighborMode = 'Supervised';
+    manifold.NeighborMode = 'KNN';
     manifold.WeightMode = 'HeatKernel';
-    manifold.gnd=[Ys;Ytpesudo];
-    manifold.k=0;
+    manifold.k=10;
+    manifold.bSelfConnected=0;
     W = lapgraph(Z',manifold);
-    W=W-diag(diag(W));
+%     W=W-diag(diag(W));
     D = diag(sparse( sum(W) ));
-    hotY=[hotmatrix(Ys,C);hotmatrix(Ytpesudo,C)];
+    hotY=[hotmatrix(Ys,C,0);hotmatrix(Y0,C)];
     hotY_2=(D-alpha*W)\hotY;
-    hotY_2(hotY_2==0)=-inf;
+%     hotY_2(hotY_2==0)=-inf;
     [~,Ytpesudo]=max(hotY_2(ns+1:end,:),[],2);
     acc=getAcc(Ytpesudo,Yt);
     acc_ite=[acc_ite,acc];
