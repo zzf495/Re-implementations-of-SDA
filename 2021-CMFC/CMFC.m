@@ -39,7 +39,7 @@ function [acc,acc_ite] = CMFC(Xs,Ys,Xt,Yt,options)
     svmmodel = train(double(Ys), sparse(double(Xs')),'-s 1 -B 1.0 -q');
     %%% the Yt below is used to calculate the accuracy only,
     %%% Yt is not involved in the training.
-    [Ytpseudo,~,~] = predict(Yt, sparse(Xt'), svmmodel,'-q');
+    [Ytpseudo,~,~] = predict(double(Yt), sparse(double(Xt')), svmmodel,'-q');
     % init
     H=centeringMatrix(n);
     E=blkdiag(zeros(ns,ns),eye(nt,nt));

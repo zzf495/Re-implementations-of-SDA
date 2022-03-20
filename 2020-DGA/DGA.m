@@ -25,9 +25,7 @@ dim=options.dim;
 [X,ns,~,n,m,C] = datasetMsg(Xs,Ys,Xt);
 % kernel project
 % init parameter
-manifold.Metric = 'Euclidean';
-manifold.NeighborMode = 'Supervised';
-manifold.WeightMode = 'HeatKernel';
+
 % W=lapgraph(X,manifold);
 H=centeringMatrix(n);
 % init Ytpesudo
@@ -45,23 +43,27 @@ end
 for i=1:T
     % compute Mcyd
     N=conditionalDistribution(Xs,Xt,Ys,Ytpesudo,C);
-    Mcr=repulsiveDistribution(Xs,Xt,Ys,Ytpesudo,C,1)+...
-        repulsiveDistribution(Xs,Xt,Ys,Ytpesudo,C,2);
-    Mcyd=M0+N-Mcr;
+    Mcr1=repulsiveDistribution(Xs,Xt,Ys,Ytpesudo,C,1);%Mcr1=Mcr1./norm(Mcr1,'fro');
+    Mcr2=repulsiveDistribution(Xs,Xt,Ys,Ytpesudo,C,2);%Mcr2=Mcr2./norm(Mcr2,'fro');
+    M1=M0+N; %M1=M1./norm(M1,'fro');
+    Mcyd=M1-(Mcr1+Mcr2);  %M0+N-Mcr;
     Mcyd=Mcyd/norm(Mcyd,'fro');
     % compute A according to (16)
     [A,~]=eigs(X*Mcyd*X'+lambda*eye(m),X*H*X',dim,'sm');
     % compute Y^* according to (18)
     Z=A'*X;
+    Z=L2Norm(Z')';
     Zs=Z(:,1:ns);
     Zt=Z(:,ns+1:end);
-    % predict the target samples
-    Ytpesudo=classifyKNN(Zs,Ys,Zt,1); 
-    
+    Ytpesudo=classifyKNN(Zs,Ys,Zt,1);
+    manifold.Metric = 'Euclidean';
+    manifold.NeighborMode = 'Supervised';
+    manifold.WeightMode = 'HeatKernel';
     manifold.gnd=[Ys;Ytpesudo];
+    manifold.k=0;
     W = lapgraph(Z',manifold);
     W=W-diag(diag(W));
-    D = diag(sparse(sqrt(1 ./ sum(W))));
+    D = diag(sparse( sum(W) ));
     hotY=[hotmatrix(Ys,C);hotmatrix(Ytpesudo,C)];
     hotY_2=(D-alpha*W)\hotY;
     hotY_2(hotY_2==0)=-inf;
