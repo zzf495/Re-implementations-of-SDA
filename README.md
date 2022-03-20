@@ -26,9 +26,9 @@ To run the codes, the size of the inputs are: <img src="http://latex.codecogs.co
 
 - 2018-TLR [[5]](https://ieeexplore.ieee.org/abstract/document/8486513)
 
-- 2019-DICE [[6]](https://ieeexplore.ieee.org/abstract/document/8353356):  [provided by authors](https://liangjian.xyz/code/uda_code.rar)
+- 2019-DICE [[6]](https://ieeexplore.ieee.org/abstract/document/8353356):  [official codes](https://liangjian.xyz/code/uda_code.rar)
 
-- 2019-DISA [[7]](https://link.springer.com/article/10.1007/s42044-019-00037-y):  [provided by authors](https://github.com/jtahmores/DISA)
+- 2019-DISA [[7]](https://link.springer.com/article/10.1007/s42044-019-00037-y):  [official codes](https://github.com/jtahmores/DISA)
 
 - 2019-SPDA [[8]](https://www.sciencedirect.com/science/article/pii/S0925231219300979)
 
@@ -42,7 +42,7 @@ To run the codes, the size of the inputs are: <img src="http://latex.codecogs.co
 
   > Office+Caltech (Decaf): By normalizing the data by normr(X')' only, do not use 'zscore', the results can be reproduced;
 
-- 2020-SPL [[16](https://ojs.aaai.org/index.php/AAAI/article/view/6091)]: [provided by authors](https://github.com/hellowangqian/domain-adaptation-capls)
+- 2020-SPL [[16](https://ojs.aaai.org/index.php/AAAI/article/view/6091)]: [official codes](https://github.com/hellowangqian/domain-adaptation-capls)
 
 - 2020-DGSA [[12]](https://ieeexplore.ieee.org/abstract/document/9115265)
 
@@ -52,7 +52,7 @@ To run the codes, the size of the inputs are: <img src="http://latex.codecogs.co
 
 - 2020-WCS-RAR [[17]](https://www.sciencedirect.com/science/article/pii/S0893608020300113)
 
-- 2021-JDSC [[14]](https://link.springer.com/article/10.1007/s11760-020-01745-w):  [provided by authors](https://github.com/jtahmores/JDSC)
+- 2021-JDSC [[14]](https://link.springer.com/article/10.1007/s11760-020-01745-w):  [official codes](https://github.com/jtahmores/JDSC)
 
 - 2021-PDALC [[15]](https://ieeexplore.ieee.org/abstract/document/9428235)
 
@@ -60,7 +60,7 @@ To run the codes, the size of the inputs are: <img src="http://latex.codecogs.co
 
 - 2021-DGB-DA [[21]](https://ieeexplore.ieee.org/abstract/document/9534057/)
 
-- 2021-CDEM [[19]](https://link.springer.com/chapter/10.1007/978-3-030-73197-7_29) :  [provided by authors](https://github.com/yuntaodu/CDEM)
+- 2021-CDEM [[19]](https://link.springer.com/chapter/10.1007/978-3-030-73197-7_29) :  [official codes](https://github.com/yuntaodu/CDEM)
 
 - 2022-ICSC [[22]](https://onlinelibrary.wiley.com/doi/abs/10.1002/int.22629) : [In our another repository](https://github.com/zzf495/ICSC), the results of five datasets, i.e., Office+Caltech (Surf, Decaf), ImageNet +VOC2007, OfficeHome (Resnet50), Office31 (Resnet50) and ImageCLEF-DA (Resnet50) are now available. Please free feel to use them directly.
 
