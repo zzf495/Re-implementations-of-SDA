@@ -62,6 +62,8 @@ To run the codes, the size of the inputs are: <img src="http://latex.codecogs.co
 
 - 2021-CDEM [[19]](https://link.springer.com/chapter/10.1007/978-3-030-73197-7_29) :  [provided by authors](https://github.com/yuntaodu/CDEM)
 
+- 2022-ICSC [[22]](https://onlinelibrary.wiley.com/doi/abs/10.1002/int.22629) : [In our another repository](https://github.com/zzf495/ICSC), the results of five datasets, i.e., Office+Caltech (Surf, Decaf), ImageNet +VOC2007, OfficeHome (Resnet50), Office31 (Resnet50) and ImageCLEF-DA (Resnet50) are now available. Please free feel to use them directly.
+
 # Reference
 
 [1] Y. Xu, X. Fang, J. Wu, X. Li and D. Zhang, "Discriminative Transfer Subspace Learning via Low-Rank and Sparse Representation," in IEEE Transactions on Image Processing, vol. 25, no. 2, pp. 850-863, Feb. 2016, doi: 10.1109/TIP.2015.2510498.
@@ -105,3 +107,5 @@ To run the codes, the size of the inputs are: <img src="http://latex.codecogs.co
 [20] Chang H, Zhang F, Ma S, et al. Unsupervised domain adaptation based on cluster matching and Fisher criterion for image classification[J]. Computers & Electrical Engineering, 2021, 91: 107041.
 
 [21] Y. Du, D. Zhou, J. Shi, Y. Lei and M. Gong, "Dynamic-graph-based Unsupervised Domain Adaptation," 2021 International Joint Conference on Neural Networks (IJCNN), 2021, pp. 1-7, doi: 10.1109/IJCNN52387.2021.9534057.
+
+[22] Teng, Shaohua, et al. "Domain adaptation via incremental confidence samples into classification." *International Journal of Intelligent Systems* 37.1 (2022): 365-385.
