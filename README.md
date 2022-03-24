@@ -62,6 +62,10 @@ To run the codes, the size of the inputs are: <img src="http://latex.codecogs.co
 
 - 2021-CDEM [[19]](https://link.springer.com/chapter/10.1007/978-3-030-73197-7_29) :  [official codes](https://github.com/yuntaodu/CDEM)
 
+- 2021-LDA-DA [[23]](https://www.sciencedirect.com/science/article/pii/S0950705121005712)
+
+  > The authors state that they use the Back-Tracking Method to get the parameters with the highest  classification accuracy (Page 9, Right column). Hence, for reproducing the results, partial target labels might be required.
+
 - 2022-ICSC [[22]](https://onlinelibrary.wiley.com/doi/abs/10.1002/int.22629) : [In our another repository](https://github.com/zzf495/ICSC), the results of five datasets, i.e., Office+Caltech (Surf, Decaf), ImageNet +VOC2007, OfficeHome (Resnet50), Office31 (Resnet50) and ImageCLEF-DA (Resnet50) are now available. Please free feel to use them directly.
 
 # Reference
@@ -109,3 +113,5 @@ To run the codes, the size of the inputs are: <img src="http://latex.codecogs.co
 [21] Y. Du, D. Zhou, J. Shi, Y. Lei and M. Gong, "Dynamic-graph-based Unsupervised Domain Adaptation," 2021 International Joint Conference on Neural Networks (IJCNN), 2021, pp. 1-7, doi: 10.1109/IJCNN52387.2021.9534057.
 
 [22] Teng, Shaohua, et al. "Domain adaptation via incremental confidence samples into classification." *International Journal of Intelligent Systems* 37.1 (2022): 365-385.
+
+[23] Xiao, Ni, et al. "Label Disentangled Analysis for unsupervised visual domain adaptation." *Knowledge-Based Systems* 229 (2021), doi: 10.1016/j.knosys.2021.107309.

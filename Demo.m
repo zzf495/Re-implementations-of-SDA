@@ -9,6 +9,7 @@ fts = fts ./ repmat(sum(fts,2),1,size(fts,2));
 Xt=fts';
 Xt=double(zscore(Xt',1))';
 Yt = labels;
+
 clear opt;opt.display=1;
 % addpath(genpath('./2015-LRSR/'));
 % LRSR(Xs,Ys,Xt,Yt,opt);
@@ -56,6 +57,9 @@ clear opt;opt.display=1;
 
 % addpath(genpath('./2021-DGB-DA/'));
 % DGB_DA(Xs,Ys,Xt,Yt,opt);
+
+% addpath(genpath('./2021-LDA/'));
+% LDA_DA(Xs,Ys,Xt,Yt,opt);
 
 % addpath(genpath('./2021-PDALC/'));
 % PDALC(Xs,Ys,Xt,Yt,opt);
