@@ -38,7 +38,7 @@ To run the codes, the size of the inputs are: <img src="http://latex.codecogs.co
 
 - 2020-DGA [[11]](https://ieeexplore.ieee.org/abstract/document/8961922/): 
 
-  >Office+Caltech (Surf) / COIL / MINIST: The initialization of the methods are unclear. 
+  >Office+Caltech (Surf) / COIL / MINIST: The initializations of the methods are unclear. 
 
   > Office+Caltech (Decaf): By normalizing the data by normr(X')' only, do not use 'zscore', the results can be reproduced;
 
