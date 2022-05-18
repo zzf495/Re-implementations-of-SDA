@@ -18,9 +18,14 @@ function [acc,acc_ite] = WCS_RAR(Xs,Ys,Xt,Yt,options)
 %% output
 %%% acc:        the classification accuracy (number,0~1)
 %%% acc_ite:    the classification accuracy in each iteration (list)
+
+%%%	======================Version=======================
+%%%		V1			2022-03-07
+%%% 	V2			2022-05-18
 acc_ite=[];
 options=defaultOptions(options,...
     'T',20,...
+    'r',30,...
     'kernel_type','rbf',...
     'u',0.1,...
     'rho',1.01,...
@@ -30,7 +35,6 @@ options=defaultOptions(options,...
     'alpha',1,...
     'beta',1,...
     'lambda',1,...
-    'kernel_param',1,...
     'eta',0.1);
 convergenceValue=options.convergenceValue;
 u=options.u;
@@ -42,13 +46,15 @@ lambda=options.lambda;
 mu=options.mu;
 T=options.T;
 [X,ns,nt,n,~,C] = datasetMsg(Xs,Ys,Xt);
+% Manifold feature learning
+[Xs_new,Xt_new,~] = WCS_RAR_GFK_Map(Xs',Xt',options.r);
+Xs = double(Xs_new');
+Xt = double(Xt_new');
+[X,ns,nt,n,~,C] = datasetMsg(Xs,Ys,Xt);
 % kernel
-if ~strcmpi(options.kernel_type,'primal')
-    X = kernelProject(options.kernel_type,X,[],options.kernel_param);
-    Xs=X(:,1:ns);
-    Xt=X(:,ns+1:end);
-    m=n;
-end
+X = kernelProject('rbf',X,[],sqrt(sum(sum(X .^ 2).^0.5)/(ns + nt)));
+Xs=X(:,1:ns);
+Xt=X(:,ns+1:end);
 hotYs=hotmatrix(Ys,C);
 hotYs=[hotYs;zeros(nt,C)];
 A=blkdiag(eye(ns),zeros(nt));
@@ -83,25 +89,22 @@ for i=1:T
     M=(1-mu)*M0+mu*N;
     M=M/norm(M,'fro');
     V0=A*hotYs+E-Y1/u;
-    
     left=(u/2*(A'*A)+alpha*S+beta*M+lambda*L)*X+eta*eye(n);
     cons=u/2*A'*V0;
     P=left\cons;
     % compute E according (31)
     Q=A*(X*P-hotYs)+Y1/u;
-    sqrtQ=diag(Q*Q');
-    E=zeros(n,C);
-    idx=sqrtQ>(1/u);
-    E(idx,:)=((sqrtQ(idx)-1/u)/sqrtQ(idx))*Q(idx,:);
+ %   sqrtQ=diag(Q*Q');
+ %   E=zeros(n,C);
+ %   idx=sqrtQ>(1/u);
+ %   E(idx,:)=((sqrtQ(idx)-1/u)/sqrtQ(idx))*Q(idx,:);
+ 	E=SolveL21Problem(Q,1/u);
     % update multiplier
     Y1=Y1+u*(A*(X*P-hotYs)-E);
     u=min(rho*u,1e7);
     % predict
-    Zk=P'*X;
-    Zs=Zk(:,1:ns);
-    Zt=Zk(:,ns+1:end);
-    Ytpesudo = classifyKNN(Zs,Ys,Zt,1);
-    
+    Zt=P'*Xt;
+    [~,Ytpesudo] = max(Zt',[],2);
     acc=getAcc(Ytpesudo,Yt);
     acc_ite=[acc_ite,acc];
     % compute the residual
